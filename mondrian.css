@@ -1,0 +1,87 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+.wide-col {
+	width: 65%;
+	height: 100%;
+	display: flex;
+}
+
+.narrow-col {
+	width: 35%;
+	height: 100%;
+	
+}
+
+.dimensions {
+	height: 50%;
+	width:100%;
+}
+
+.blue {background-color: #0D11A8;}
+.red {background-color: #F50F0F;}
+.yellow {background-color: #FAE317;}
+
+
+/* Codes below are for centering the images */
+.center-horizontal {
+	align-items: center;	
+}
+
+
+.center-vertical {
+	justify-content: center;
+}
+
+
+.contain-image {
+	max-height: 75%;
+	max-width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+ body{display: block;}
+ 
+	.narrow-col {
+	width: 100%;
+	height: 35%;
+	display: flex;
+	}
+	
+	.wide-col {
+		width: 100%;
+		height: 65%;
+		display: flex;
+	}
+	.dimensions {
+	height: 100%;
+	width:50%;
+	}
+}
+
+/* All this code is taking the blue red and yellow colors and switching them depending on the # code at the end depending on the pixel resoulution */
+@media screen and (max-width: 1150px) {	
+	.blue {background-color: #FFBA00;}
+	.red {background-color: #FAFF00;}
+	.yellow {background-color: #B4FF00;}
+	
+
+@media screen and (max-width: 850px) {	
+	.blue {background-color: #00FF19;}
+	.red {background-color: #00FFCE;}
+	.yellow {background-color: #00C5FF;}
+}
+@media screen and (max-width: 650px) {	
+	.blue {background-color: #0084FF;}
+	.red {background-color: #0027FF;}
+	.yellow {background-color: #A600FF;}
+}
+@media screen and (max-width: 450px) {	
+	.blue {background-color: #FA00FF;}
+	.red {background-color: #FAFF00;}
+	.yellow {background-color: #FF0000;}
+}
